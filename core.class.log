@@ -1,0 +1,200 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB039FD5642092F8DA9AB',
+    participant: undefined
+  },
+  messageTimestamp: 1729374940,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'xzxzxz',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'xzxzxz',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_25451ee4-41ed-4f68-9ea1-ac0f433518b5',
+  keyword: 'key_8cc703c8-dedf-452f-8f60-ff323cf8b4a0',
+  answer: '¡Hola! 👋 \n' +
+    '*Bienvenida a salón de belleza Yuli* \n' +
+    'Estamos encantados de que nos contactes.',
+  options: {
+    media: 'https://scontent-bog2-2.xx.fbcdn.net/v/t39.30808-6/463206425_8488342821213872_7485064648436879787_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrkA4r1IrCHjGOS1SkAz_mOuecFBThr-g655wUFOGv6MBz8JBdylMGFRGdwwaa469gwkTzPp1WHrzcXCFe3gpX&_nc_ohc=aEAmTagMW7QQ7kNvgGpjM4E&_nc_zt=23&_nc_ht=scontent-bog2-2.xx&_nc_gid=A75y3Ayp35xuOb7h1uDqG3C&oh=00_AYD46-hQADWQllOiP0a4K69MJYCF1fiKctZdl5Y-evZcAg&oe=671613AB',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 3000,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '39d0b91445fe3ee55c5fb33a653334cc'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0122F37CD81A2D5A58D',
+    participant: undefined
+  },
+  messageTimestamp: 1729374947,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'agendar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'agendar',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB07C1653B57B6039BA36',
+    participant: undefined
+  },
+  messageTimestamp: 1729374955,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'lunes al 1pm',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'lunes al 1pm',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0804074164AB9A6092B',
+    participant: undefined
+  },
+  messageTimestamp: 1729374969,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'lunes a la 1pm',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'lunes a la 1pm',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0240314F33946C3EB6D',
+    participant: undefined
+  },
+  messageTimestamp: 1729374995,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'quiero otra diferente',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'quiero otra diferente',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB04CA6203C3A3FAF3913',
+    participant: undefined
+  },
+  messageTimestamp: 1729375005,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'lunes a la 1pm',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'lunes a la 1pm',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB037A6C2F799C5D84B06',
+    participant: undefined
+  },
+  messageTimestamp: 1729375017,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'si',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB04AC8CC7C7E2232C0E1',
+    participant: undefined
+  },
+  messageTimestamp: 1729375022,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'nfdndfnm',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'nfdndfnm',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB023E3213038F59FC0DC',
+    participant: undefined
+  },
+  messageTimestamp: 1729375025,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'hjfdhjdfhj',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: 'hjfdhjdfhj',
+  from: '573005977145'
+}
