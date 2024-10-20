@@ -18,6 +18,13 @@ La fecha y horario solicitados no están disponibles. Te puedo ofrecer el jueves
 Bajo ninguna circunstancia debes realizar consultas adicionales a la fecha que estas resiviendo.
 En caso de que la disponibilidad sea false, no indiques directamente que no hay disponibilidad. En lugar de eso, envía una disculpa por la indisponibilidad de la fecha y ofrece la siguiente opción.`;
 
+const currentDate = new Date();
+const formattedDate = currentDate.toLocaleDateString("es-ES", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+});
+
 const flowCreate = addKeyword(EVENTS.ACTION).addAnswer(
   "ok espera un momento para guardar tu turno📝",
   null,
@@ -87,7 +94,6 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
   "Revisando disponibilidad...🤔",
   null,
   async (ctx, ctxFn) => {
-    const currentDate = new Date();
     const solicitedDate = await text2iso(ctx.body);
 
     console.log("Esta es la fecha en dateFlow:", solicitedDate);
@@ -143,7 +149,7 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
 );
 
 const flowCheckDate = addKeyword(["agendar cita", "agendar"]).addAnswer(
-  "Por favor, indícame la fecha y hora que deseas agendar? \n \npor ejemplo: *Lunes 14 de octubre a la 01:00 pm*.",
+  `Por favor, indícame la fecha y hora que deseas agendar? \n \npor ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n \nRecuerda que la fecha de hoy es ${formattedDate}`,
   { capture: true },
   async (ctx, ctxFn) => {
     console.log("dshjdshjdshjdshj", ctx.body);

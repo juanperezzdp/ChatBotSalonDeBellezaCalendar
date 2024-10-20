@@ -17,7 +17,7 @@ const flowMain = addKeyword(EVENTS.WELCOME).addAnswer(
   {
     delay: 3000,
     media:
-      "https://scontent-bog2-2.xx.fbcdn.net/v/t39.30808-6/463206425_8488342821213872_7485064648436879787_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGrkA4r1IrCHjGOS1SkAz_mOuecFBThr-g655wUFOGv6MBz8JBdylMGFRGdwwaa469gwkTzPp1WHrzcXCFe3gpX&_nc_ohc=aEAmTagMW7QQ7kNvgGpjM4E&_nc_zt=23&_nc_ht=scontent-bog2-2.xx&_nc_gid=A75y3Ayp35xuOb7h1uDqG3C&oh=00_AYD46-hQADWQllOiP0a4K69MJYCF1fiKctZdl5Y-evZcAg&oe=671613AB",
+      "https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/refs/heads/main/img/bienvenida.png",
   },
   async (ctx, ctxFn) => {
     return ctxFn.gotoFlow(flowWelcome);
