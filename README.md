@@ -25,10 +25,16 @@ Con la librería **npm create bot-whatsapp@latest**, puedes construir flujos aut
    ```bash
    git clone https://github.com/juanperezzdp/ChatBotSalonDeBellezaCalendar.git
    ```
-   -Instala las dependencias:
-   -Inicia la aplicación:
+2. Instala las dependencias:
 
 ```
 npm install
-npm start
+
+```
+
+3. Inicia la aplicación:
+
+```
+npm install
+
 ```
