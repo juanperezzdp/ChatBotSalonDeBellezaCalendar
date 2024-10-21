@@ -1,26 +1,31 @@
 [handleMsg]:  {
   key: {
-    remoteJid: '573013224609@s.whatsapp.net',
+    remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '9BC60600EC4982D0ED1763313D0E086E',
+    id: '3EB08B6F421B31D7D5056F',
     participant: undefined
   },
-  messageTimestamp: 1729431104,
-  pushName: 'Yuliandry Daza 🍂',
+  messageTimestamp: 1729555020,
+  pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'Cotizar',
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'g',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
-      deviceListMetadataVersion: 2
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
     }
   },
-  body: 'Cotizar',
-  from: '573013224609'
+  body: 'g',
+  from: '573005977145'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_843b5c79-3b85-4c58-9cd5-7e5bc31cc802',
-  keyword: 'key_daa8e0f7-5e88-4358-9029-5de377fcdc8c',
+  ref: 'ans_1fd710ba-3207-455e-af41-021705f9e532',
+  keyword: 'key_a8302d34-62e3-4ad2-8ac5-91dfba3c8577',
   answer: '¡Hola! 👋 \n' +
     '*Bienvenida a salón de belleza Yuli* \n' +
     'Estamos encantados de que nos contactes.',
@@ -36,25 +41,226 @@
     keyword: {},
     callback: true
   },
-  refSerialize: 'ccc826880bf6d3918cb243578b1a2698'
+  refSerialize: '9665ab5d0d645714ecf7798904ec10d6'
 }
 [handleMsg]:  {
   key: {
-    remoteJid: '573013224609@s.whatsapp.net',
+    remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '25FE9185077EEA547DF45EE23CB548ED',
+    id: '340F0CDC45C0F919476EA49D570BD7B1',
     participant: undefined
   },
-  messageTimestamp: 1729431117,
-  pushName: 'Yuliandry Daza 🍂',
+  messageTimestamp: 1729555026,
+  pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'Cotizar',
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 604800,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2
     }
   },
-  body: 'Cotizar',
-  from: '573013224609'
+  body: '',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB042BD5D9EB3E9A431C2',
+    participant: undefined
+  },
+  messageTimestamp: 1729555057,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'cotizar',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'cotizar',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: 'ABF432177CFB6F2C8CDFD7BC9F43F030',
+    participant: undefined
+  },
+  messageTimestamp: 1729555059,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 604800,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0F08778E5CCA50F09F2',
+    participant: undefined
+  },
+  messageTimestamp: 1729555062,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'cotizar',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'cotizar',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c5492d17-0a2e-4779-b567-564068151596',
+  keyword: 'key_eae5a77e-dd71-472a-8a80-82d738c5c48f',
+  answer: 'En la imagen encontrarás todos los servicios que ofrecemos en el salón de belleza Yuli, junto con sus precios💇‍♀️💅 \n' +
+    ' \n' +
+    'Si tienes alguna pregunta o quieres agendar una cita, no dudes en escribirnos. ¡Estamos aquí para ayudarte!📲',
+  options: {
+    media: 'https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/refs/heads/main/img/cotizar.png',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'a9b4194210ee1e60fe80db6cf2ff4cce'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '105EA090C7C7B21D5FE0D36A17D8597B',
+    participant: undefined
+  },
+  messageTimestamp: 1729555065,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 604800,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB05EF151DD2890EF5265',
+    participant: undefined
+  },
+  messageTimestamp: 1729555077,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    extendedTextMessage: ExtendedTextMessage {
+      text: 'agendar',
+      contextInfo: [ContextInfo],
+      inviteLinkGroupTypeV2: 0
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'agendar',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_190eb082-bbdc-4f3f-ab0f-64f2c1ece8fd',
+  keyword: 'key_593f1bd3-5be2-4f21-b79b-c72a82213bfc',
+  answer: 'Por favor, indícame la fecha y hora que deseas agendar? \n' +
+    ' \n' +
+    'por ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n' +
+    ' \n' +
+    'Recuerda que la fecha de hoy es 21/10/2024',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'bd3071fd1d2734f4314931adc259932e'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: 'D6A46AFAA78C5F66EE9438E90A7C4100',
+    participant: undefined
+  },
+  messageTimestamp: 1729555078,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 604800,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573005977145'
 }

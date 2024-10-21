@@ -11,6 +11,9 @@ const BaileysProvider = require("@bot-whatsapp/provider/baileys");
 const MockAdapter = require("@bot-whatsapp/database/mock");
 
 const { flowWelcome } = require("./flow/flowWelcome");
+const { flowCheckDate } = require("./flow/flowScheduleAnAppointment");
+const { flowProducts } = require("./flow/flowProducts");
+const { flowPrice } = require("./flow/flowPrice");
 
 const flowMain = addKeyword(EVENTS.WELCOME).addAnswer(
   "¡Hola! 👋 \n*Bienvenida a salón de belleza Yuli* \nEstamos encantados de que nos contactes.",
@@ -27,7 +30,12 @@ const flowMain = addKeyword(EVENTS.WELCOME).addAnswer(
 
 const main = async () => {
   const adapterDB = new MockAdapter();
-  const adapterFlow = createFlow([flowMain]);
+  const adapterFlow = createFlow([
+    flowMain,
+    flowCheckDate,
+    flowProducts,
+    flowPrice,
+  ]);
   const adapterProvider = createProvider(BaileysProvider);
 
   createBot({
