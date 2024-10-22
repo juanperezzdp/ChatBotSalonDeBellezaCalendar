@@ -1,16 +1,17 @@
-const { addKeyword } = require("@bot-whatsapp/bot");
+const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
-const flowProducts = addKeyword(["productos", "produto"]).addAnswer(
+const flowPDF = addKeyword(EVENTS.ACTION).addAnswer("catalogo", {
+  media:
+    "https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/refs/heads/main/img/catalogo.pdf",
+});
+
+const flowProducts = addKeyword(["productos", "producto", "produto"]).addAnswer(
+  "✨¡Te presentamos nuestro catálogo de productos!💇‍♀️💅 \nExplora nuestras opciones y encuentra lo que mejor se adapta a ti. \n \nSi tienes alguna pregunta o quieres agendar una cita, no dudes en escribirnos. ¡Estamos aquí para ayudarte!📲💬",
   null,
-  {
-    media:
-      "https://younique-dfiles.s3-us-west-2.amazonaws.com/s3fs-public/Younique_Product_Catalog_2016_09_es_US.pdf",
-  },
   async (ctx, ctxFn) => {
-    return ctxFn.endFlow(
-      "catálogo en PDF de los productos que ofrecemos para ti"
-    );
-  }
+    return ctxFn.gotoFlow(flowPDF);
+  },
+  [flowPDF]
 );
 
 module.exports = { flowProducts };
