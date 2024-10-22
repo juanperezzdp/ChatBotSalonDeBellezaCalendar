@@ -2,7 +2,7 @@ const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 
 const flowPDF = addKeyword(EVENTS.ACTION).addAnswer("catalogo", {
   media:
-    "https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/refs/heads/main/img/catalogo.pdf",
+    "https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/5b1023ba0368d302b6f7c41142e66ac9b5708fc0/img/catalogo.pdf",
 });
 
 const flowProducts = addKeyword(["productos", "producto", "produto"]).addAnswer(
