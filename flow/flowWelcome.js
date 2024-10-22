@@ -2,9 +2,10 @@ const { addKeyword, EVENTS } = require("@bot-whatsapp/bot");
 const { flowCheckDate } = require("./flowScheduleAnAppointment");
 const { flowProducts } = require("./flowProducts");
 const { flowPrice } = require("./flowPrice");
+const { flowAddress } = require("./flowAddress");
 
 const flowWelcome = addKeyword(EVENTS.ACTION).addAnswer(
-  "En el salón de belleza Yuli, nos especializamos en brindarte el mejor cuidado para tu cabello y piel. \nAquí podrás encontrar una amplia gama de servicios como \n \n🗓️ *Agendar turno* \n💅 *Produtos* \n*📝 Cotización* \n \nEscribe solamente la palabra del servicio que desee",
+  "En el salón de belleza Yuli, nos especializamos en brindarte el mejor cuidado para tu cabello y piel. \nAquí podrás encontrar una amplia gama de servicios. \n \nEscribe solamente la palabra del servicio o información que desees: \n1. *🗓️Agendar turno* \n2. *💅Produtos* \n3. *📝Cotización*",
   { capture: true },
   async (ctx, ctxFn) => {
     if (
@@ -24,6 +25,11 @@ const flowWelcome = addKeyword(EVENTS.ACTION).addAnswer(
       ctx.body.toLowerCase() === "cotización"
     ) {
       return ctxFn.gotoFlow(flowPrice);
+    } else if (
+      ctx.body.toLowerCase() === "direccion" ||
+      ctx.body.toLowerCase() === "ubicacion"
+    ) {
+      return ctxFn.gotoFlow(flowAddress);
     } else {
       return setTimeout(() => {
         ctxFn.endFlow();

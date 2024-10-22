@@ -14,6 +14,7 @@ const { flowWelcome } = require("./flow/flowWelcome");
 const { flowCheckDate } = require("./flow/flowScheduleAnAppointment");
 const { flowProducts } = require("./flow/flowProducts");
 const { flowPrice } = require("./flow/flowPrice");
+const { flowAddress } = require("./flow/flowAddress");
 
 const flowMain = addKeyword(EVENTS.WELCOME).addAnswer(
   "¡Hola! 👋 \n*Bienvenida a salón de belleza Yuli* \nEstamos encantados de que nos contactes.",
@@ -35,6 +36,7 @@ const main = async () => {
     flowCheckDate,
     flowProducts,
     flowPrice,
+    flowAddress,
   ]);
   const adapterProvider = createProvider(BaileysProvider);
 

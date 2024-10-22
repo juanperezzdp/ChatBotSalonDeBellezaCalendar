@@ -2,41 +2,61 @@
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0D840AABAB326660887',
+    id: '3EB0A5EB71EA434E4FB456',
     participant: undefined
   },
-  messageTimestamp: 1729560064,
+  messageTimestamp: 1729638654,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'produto',
+    conversation: 'dsds',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'produto',
+  body: 'dsds',
   from: '573005977145'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_86a62204-2d87-496b-be9b-f74e058f15b5',
-  keyword: 'key_b59b044e-53a5-410b-9b27-8f5f027a16da',
-  answer: '✨¡Te presentamos nuestro catálogo de productos!💇‍♀️💅 \n' +
-    'Explora nuestras opciones y encuentra lo que mejor se adapta a ti. \n' +
-    ' \n' +
-    'Si tienes alguna pregunta o quieres agendar una cita, no dudes en escribirnos. ¡Estamos aquí para ayudarte!📲💬',
+  ref: 'ans_1bec2705-aff1-41db-a2f1-82a1ed4a9d76',
+  keyword: 'key_de9d4ca0-4ee5-4110-b0b7-794331985102',
+  answer: '¡Hola! 👋 \n' +
+    '*Bienvenida a salón de belleza Yuli* \n' +
+    'Estamos encantados de que nos contactes.',
   options: {
-    media: null,
+    media: 'https://raw.githubusercontent.com/juanperezzdp/ChatBotSalonDeBellezaCalendar/refs/heads/main/img/bienvenida.png',
     buttons: [],
     capture: false,
     child: null,
-    delay: 0,
+    delay: 3000,
     idle: null,
     ref: null,
     nested: [ [Object], [Object] ],
     keyword: {},
     callback: true
   },
-  refSerialize: '40fa3cf6e9d6c1ab2c48413f97c61146'
+  refSerialize: '727ee1dbbd65efd94056a3ac2151e6f7'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB07AD92A24A1B7408807',
+    participant: undefined
+  },
+  messageTimestamp: 1729638662,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'direccion',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'direccion',
+  from: '573005977145'
 }
