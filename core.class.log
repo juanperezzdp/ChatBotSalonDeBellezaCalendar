@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0A5EB71EA434E4FB456',
+    id: '3EB0BCEB508ACBF5F584E8',
     participant: undefined
   },
-  messageTimestamp: 1729638654,
+  messageTimestamp: 1729644286,
   pushName: '😎',
   broadcast: false,
   message: Message {
@@ -20,8 +20,8 @@
   from: '573005977145'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_1bec2705-aff1-41db-a2f1-82a1ed4a9d76',
-  keyword: 'key_de9d4ca0-4ee5-4110-b0b7-794331985102',
+  ref: 'ans_da4117a6-005e-47e7-8595-5ecd4a119c89',
+  keyword: 'key_d6b14332-fe26-449c-a225-0e759d6add8d',
   answer: '¡Hola! 👋 \n' +
     '*Bienvenida a salón de belleza Yuli* \n' +
     'Estamos encantados de que nos contactes.',
@@ -37,16 +37,81 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '727ee1dbbd65efd94056a3ac2151e6f7'
+  refSerialize: '117d3c38da40c05845ef4e69dcc4195d'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB07AD92A24A1B7408807',
+    id: '3EB05F953E4D0E82BD6817',
     participant: undefined
   },
-  messageTimestamp: 1729638662,
+  messageTimestamp: 1729644298,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'cotizar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'cotizar',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B10CA44D93A60B9E3D',
+    participant: undefined
+  },
+  messageTimestamp: 1729644311,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'producto',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'producto',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_f134e3a9-fe30-4886-9a43-a8de82d751cc',
+  keyword: 'key_a3b0b299-36af-4142-b985-399edb03eeff',
+  answer: '✨¡Te presentamos nuestro catálogo de productos!💇‍♀️💅 \n' +
+    'Explora nuestras opciones y encuentra lo que mejor se adapta a ti. \n' +
+    ' \n' +
+    '*Link del catalogo:*  https://www.canva.com/design/DAGUQMZmVfY/5C-i-ycv2dqit_0swza3qg/view?utm_content=DAGUQMZmVfY&utm_campaign=designshare&utm_medium=link&utm_source=editor#4 \n' +
+    ' \n' +
+    'Si tienes alguna pregunta o quieres agendar una cita, no dudes en escribirnos. ¡Estamos aquí para ayudarte!📲💬',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ecf1befb90ad235fb0591914b1250fc6'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB02EBD80F64F96D614C1',
+    participant: undefined
+  },
+  messageTimestamp: 1729644336,
   pushName: '😎',
   broadcast: false,
   message: Message {
@@ -58,5 +123,185 @@
     }
   },
   body: 'direccion',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c9f5ee3f-d360-4d0f-abe5-fabc05ee37a5',
+  keyword: 'key_b9779c3e-98bd-46bd-b5af-1f0e4622e9bb',
+  answer: '✨¡Te esperamos en nuestro salón de belleza para que vivas una experiencia única de relajación y estilo!✨ \n' +
+    ' \n' +
+    '🏙️ *Ciudad:* Barquisimeto - Lara   \n' +
+    '📍 *Dirección:* [Calle 22, avenida 4. Local: 567] \n' +
+    ' \n' +
+    '🕒 *Horario:* \n' +
+    '*Lunes a Sábados:* 7:00AM-6:00PM \n' +
+    '*Domingos:* Cerrado \n' +
+    ' \n' +
+    '¡Ven y déjanos consentirte con los mejores tratamientos y servicios! 💅💆‍♀️',
+  options: {
+    media: 'https://i.imgur.com/mDBDdcL.mp4',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '853da1c7d436b9c17e0acb2882820d54'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06429B0916F236108EE',
+    participant: undefined
+  },
+  messageTimestamp: 1729644406,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'agendar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'agendar',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_9f1ccd80-8660-4da6-88ae-17fe4992bee5',
+  keyword: 'key_1d284d2f-42b6-4e7a-b740-b3fa8d02c95f',
+  answer: 'Por favor, indícame la fecha y hora que deseas agendar? \n' +
+    ' \n' +
+    'por ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n' +
+    ' \n' +
+    'Recuerda que la fecha de hoy es *22/10/2024*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: '74f89154fb0f15a5125e4f0863b2151e'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0B6129A06807206EB81',
+    participant: undefined
+  },
+  messageTimestamp: 1729644434,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'miercoles 23 de octubre a la 3pm',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'miercoles 23 de octubre a la 3pm',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0D2E1987223C637CA1D',
+    participant: undefined
+  },
+  messageTimestamp: 1729644463,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'si',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0328440B47D33EA642B',
+    participant: undefined
+  },
+  messageTimestamp: 1729644471,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'julian',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'julian',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: 'C5CF8401217BE0DD198E010403F45288',
+    participant: undefined
+  },
+  messageTimestamp: 1729644471,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    protocolMessage: ProtocolMessage {
+      key: [MessageKey],
+      type: 4,
+      ephemeralExpiration: 604800,
+      ephemeralSettingTimestamp: [Long],
+      disappearingMode: [DisappearingMode]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB089FE107398A4838E15',
+    participant: undefined
+  },
+  messageTimestamp: 1729644480,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'corte de cabello',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'corte de cabello',
   from: '573005977145'
 }

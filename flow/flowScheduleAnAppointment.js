@@ -26,7 +26,7 @@ const formattedDate = currentDate.toLocaleDateString("es-ES", {
 });
 
 const flowCreate = addKeyword(EVENTS.ACTION).addAnswer(
-  "ok espera un momento para guardar tu turno📝",
+  "Por favor, espera un momento mientras guardamos tu turno.📝",
   null,
   async (ctx, ctxFn) => {
     const userInfo = await ctxFn.state.getMyState();
@@ -53,7 +53,7 @@ const flowFormMotive = addKeyword(EVENTS.ACTION).addAnswer(
 );
 
 const flowFormName = addKeyword("si").addAnswer(
-  "Excelente! Gracias por confimar la fecha. \n \nTe voy a hacer unas consultas para agendar tu turno. \n*Primero dime cuál es tu nombre?*",
+  "Excelente! Gracias por confimar la fecha.😉 \n \nTe voy a hacer unas consultas para agendar tu turno. \n*Primero dime cuál es tu nombre?*",
   { capture: true },
   async (ctx, ctxFn) => {
     if (ctx.body && ctx.body.trim()) {
@@ -149,10 +149,10 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
 );
 
 const flowCheckDate = addKeyword(["agendar cita", "agendar"]).addAnswer(
-  `Por favor, indícame la fecha y hora que deseas agendar? \n \npor ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n \nRecuerda que la fecha de hoy es ${formattedDate}`,
+  `Por favor, indícame la fecha y hora que deseas agendar? \n \npor ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n \nRecuerda que la fecha de hoy es *${formattedDate}*`,
   { capture: true },
   async (ctx, ctxFn) => {
-    console.log("dshjdshjdshjdshj", ctx.body);
+    console.log("flowCheckDate", ctx.body);
     const solicitedDate = await text2iso(ctx.body);
     console.log("Fecha solicitada: " + solicitedDate);
 
