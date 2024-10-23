@@ -1,7 +1,7 @@
 const { addKeyword } = require("@bot-whatsapp/bot");
 
 const flowAddress = addKeyword([
-  "Dirección",
+  "dirección",
   "direccion",
   "direcion",
   "ubicación",
