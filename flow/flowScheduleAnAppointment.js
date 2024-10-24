@@ -9,7 +9,7 @@ const {
 const { chat } = require("../script/chatgpt");
 
 const promtBase = `Eres un asistente virtual diseñado para ayudar a los usuarios a agendar citas mediante una conversación.
-Tu único objetivo es ayudar al usuario a elegir una fecha y un horario para reservar una cita.
+Tu único objetivo es ayudar al usuario a elegir una fecha y un horario para reservar una cita, quiero que revise muy bien si la fecha que esta resiviendo esta disponible pero sino no lo esta solo dale la siguiente opcion.
 Te proporcionaré la fecha solicitada por el usuario y la disponibilidad de la misma, la cual debe ser confirmada por el usuario.
 Si la disponibilidad es true, responde de la siguiente manera:
 La fecha solicitada está disponible. El turno sería el jueves 30 de mayo de 2024 a las 10:00 am.
@@ -95,6 +95,7 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
   null,
   async (ctx, ctxFn) => {
     const solicitedDate = await text2iso(ctx.body);
+    const currentDate = new Date();
 
     console.log("Esta es la fecha en dateFlow:", solicitedDate);
 
@@ -130,7 +131,9 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
       await ctxFn.flowDynamic(response);
       await ctxFn.state.update({ date: nextAvailableSlot.start });
       return ctxFn.gotoFlow(flowConfir);
-    } else {
+    }
+
+    if (dateAvailable === true) {
       const messages = [{ role: "user", content: `${ctx.body}` }];
       const response = await chat(
         promtBase +
