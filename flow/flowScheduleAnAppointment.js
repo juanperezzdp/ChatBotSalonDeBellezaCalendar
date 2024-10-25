@@ -8,22 +8,20 @@ const {
 
 const { chat } = require("../script/chatgpt");
 
-const promtBase = `Eres un asistente virtual diseñado para ayudar a los usuarios a agendar citas mediante una conversación.
-Tu único objetivo es ayudar al usuario a elegir una fecha y un horario para reservar una cita.
-Te proporcionaré la fecha solicitada por el usuario y la disponibilidad de la misma, la cual debe ser confirmada por el usuario.
-Si la disponibilidad es true, responde de la siguiente manera:
+const promtBase = `Eres un asistente virtual diseñado para ayudar a los usuarios a agendar citas dentro del horario laboral de 7:00 am a 6:00 pm.
+ Tu único objetivo es asistir al usuario en elegir una fecha y hora para reservar su turno. 
+ Te proporcionaré la fecha solicitada y la disponibilidad del horario, la cual debe ser confirmada por el usuario. 
+ Si el horario está disponible true y es dentro de ese rango, responde así:
 La fecha solicitada está disponible. El turno sería el jueves 30 de mayo de 2024 a las 10:00 am.
-Si la disponibilidad es false, responde de esta forma:
+Si el horario solicitado no está disponible false o es fuera del rango permitido, responde de la siguiente manera:
 La fecha y horario solicitados no están disponibles. Te puedo ofrecer el jueves 30 de mayo de 2024 a las 11:00 am.
+Reglas importantes:
+Solo ofrece horarios entre 7:00 am y 6:00 pm.
+Solo ofrece agendar turno los dias de lunes a sabado y si es domingo no ofrezca nada.
+Si la disponibilidad es false, no digas directamente que no hay disponibilidad. En lugar de eso, pide disculpas y ofrece una nueva opción dentro del rango permitido.
+No hagas preguntas adicionales a la información proporcionada sobre la fecha.
 Bajo ninguna circunstancia debes realizar consultas adicionales a la fecha que estas resiviendo.
-En caso de que la disponibilidad sea false, no indiques directamente que no hay disponibilidad. En lugar de eso, envía una disculpa por la indisponibilidad de la fecha y ofrece la siguiente opción.`;
-
-const currentDate = new Date();
-const formattedDate = currentDate.toLocaleDateString("es-ES", {
-  day: "2-digit",
-  month: "2-digit",
-  year: "numeric",
-});
+ `;
 
 const flowCreate = addKeyword(EVENTS.ACTION).addAnswer(
   "Por favor, espera un momento mientras guardamos tu turno.📝",
@@ -52,7 +50,7 @@ const flowFormMotive = addKeyword(EVENTS.ACTION).addAnswer(
   [flowCreate]
 );
 
-const flowFormName = addKeyword("si").addAnswer(
+const flowFormName = addKeyword(["si", "sí"]).addAnswer(
   "Excelente! Gracias por confimar la fecha.😉 \n \nTe voy a hacer unas consultas para agendar tu turno. \n*Primero dime cuál es tu nombre?*",
   { capture: true },
   async (ctx, ctxFn) => {
@@ -69,13 +67,13 @@ const flowCancel = addKeyword("no quiero agendar").addAnswer(
   "Entendido, se ha cancelado el proceso."
 );
 
-const flowConfir = addKeyword(["si", "no"]).addAnswer(
+const flowConfir = addKeyword(["si", "sí", "no"]).addAnswer(
   "¿Confirmas esta fecha y hora? \n \nResponde solamente con las siguientes optiones: \n1. *Sí* \n2. *Quiero otra diferente* \n3. *No quiero agendar*",
   { capture: true },
   (ctx, ctxFn) => {
     const answer = ctx.body.toLowerCase();
 
-    if (answer === "si") {
+    if (answer === "si" || answer === "sí") {
       return ctxFn.gotoFlow(flowFormName);
     }
 
@@ -90,7 +88,7 @@ const flowConfir = addKeyword(["si", "no"]).addAnswer(
   [flowFormName]
 );
 
-const flowConfirmarFecha = addKeyword("si").addAnswer(
+const flowConfirmarFecha = addKeyword(["si", "sí"]).addAnswer(
   "Revisando disponibilidad...🤔",
   null,
   async (ctx, ctxFn) => {
@@ -150,6 +148,13 @@ const flowConfirmarFecha = addKeyword("si").addAnswer(
   },
   [flowConfir]
 );
+
+const currenDate = new Date();
+const formattedDate = currenDate.toLocaleDateString("es-ES", {
+  day: "2-digit",
+  month: "2-digit",
+  year: "numeric",
+});
 
 const flowCheckDate = addKeyword(["agendar cita", "agendar"]).addAnswer(
   `Por favor, indícame la fecha y hora que deseas agendar? \n \npor ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n \nRecuerda que la fecha de hoy es *${formattedDate}*`,
