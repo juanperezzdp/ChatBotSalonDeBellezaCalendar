@@ -2,10 +2,10 @@
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0AFD7A19B1D6C6A5101',
+    id: '3EB03FFCE65777A4223DEB',
     participant: undefined
   },
-  messageTimestamp: 1729813815,
+  messageTimestamp: 1729817677,
   pushName: '😎',
   broadcast: false,
   message: Message {
@@ -20,8 +20,8 @@
   from: '573005977145'
 }
 [QUEUE_SE_ENVIO]:  {
-  ref: 'ans_971448a2-fa3e-4fde-a781-7ff39a84984a',
-  keyword: 'key_67186885-9c8a-44c9-836c-b9acb59a53b2',
+  ref: 'ans_4b5ac95f-7e5f-4d24-a554-264cc665eada',
+  keyword: 'key_686fe18c-52f4-436d-85f5-5c0500c52975',
   answer: 'Por favor, indícame la fecha y hora que deseas agendar? \n' +
     ' \n' +
     'por ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n' +
@@ -39,110 +39,280 @@
     keyword: {},
     callback: true
   },
-  refSerialize: '99f94b6ec4d523c0fb8e94d0ab4f50d2'
+  refSerialize: 'dbeffb8d54f7294128efc41c62d4a128'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB036B296DB7EF5F5B50A',
+    id: '3EB0AE1D043955D2108DE1',
     participant: undefined
   },
-  messageTimestamp: 1729813831,
+  messageTimestamp: 1729817691,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'viernes 25 de octubre a la 7am',
+    conversation: 'sabados 26 de octubre a la 7am',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'viernes 25 de octubre a la 7am',
+  body: 'sabados 26 de octubre a la 7am',
   from: '573005977145'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB03800091DBF6BC7DAF1',
+    id: '3EB0E37F1CFF483F305E27',
     participant: undefined
   },
-  messageTimestamp: 1729813864,
+  messageTimestamp: 1729817697,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'quiero otra diferente',
+    conversation: 'si',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'quiero otra diferente',
+  body: 'si',
   from: '573005977145'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB030DE0831A96408BBDD',
+    id: '3EB09E1A92178CAC16B196',
     participant: undefined
   },
-  messageTimestamp: 1729813875,
+  messageTimestamp: 1729817698,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'viernes 25 de octubre a la 9am',
+    conversation: 'hjdhdhjshjds',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'viernes 25 de octubre a la 9am',
+  body: 'hjdhdhjshjds',
   from: '573005977145'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB0133F6543A9C93A4A50',
+    id: '3EB00939D08C05AC27C2ED',
     participant: undefined
   },
-  messageTimestamp: 1729813922,
+  messageTimestamp: 1729817700,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'quiero otra diferente',
+    conversation: 'hdsghdsgh',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'quiero otra diferente',
+  body: 'hdsghdsgh',
   from: '573005977145'
 }
 [handleMsg]:  {
   key: {
     remoteJid: '573005977145@s.whatsapp.net',
     fromMe: false,
-    id: '3EB02945D5BC5A7E812AFE',
+    id: '3EB064FDAF9C6ECE7CAB3D',
     participant: undefined
   },
-  messageTimestamp: 1729813927,
+  messageTimestamp: 1729817805,
   pushName: '😎',
   broadcast: false,
   message: Message {
-    conversation: 'viernes 25 de octubre a la 7am',
+    conversation: 'agendar',
     messageContextInfo: MessageContextInfo {
       deviceListMetadata: [DeviceListMetadata],
       deviceListMetadataVersion: 2,
       messageSecret: [Uint8Array]
     }
   },
-  body: 'viernes 25 de octubre a la 7am',
+  body: 'agendar',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4b5ac95f-7e5f-4d24-a554-264cc665eada',
+  keyword: 'key_686fe18c-52f4-436d-85f5-5c0500c52975',
+  answer: 'Por favor, indícame la fecha y hora que deseas agendar? \n' +
+    ' \n' +
+    'por ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n' +
+    ' \n' +
+    'Recuerda que la fecha de hoy es *24/10/2024*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'dbeffb8d54f7294128efc41c62d4a128'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB00AAD77476516EAF3A6',
+    participant: undefined
+  },
+  messageTimestamp: 1729817808,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'sabados 26 de octubre a la 7am',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'sabados 26 de octubre a la 7am',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0FBB656AA8E685120B5',
+    participant: undefined
+  },
+  messageTimestamp: 1729817832,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'si',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'si',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0A2C9A227BE92C0B9EF',
+    participant: undefined
+  },
+  messageTimestamp: 1729817835,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'hjdshjds',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'hjdshjds',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB06FDF54C5ED0A14DACC',
+    participant: undefined
+  },
+  messageTimestamp: 1729817836,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'dsghjhdjshjds',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'dsghjhdjshjds',
+  from: '573005977145'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB0C9C6380111C4B66C78',
+    participant: undefined
+  },
+  messageTimestamp: 1729817839,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'agendar',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'agendar',
+  from: '573005977145'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_4b5ac95f-7e5f-4d24-a554-264cc665eada',
+  keyword: 'key_686fe18c-52f4-436d-85f5-5c0500c52975',
+  answer: 'Por favor, indícame la fecha y hora que deseas agendar? \n' +
+    ' \n' +
+    'por ejemplo: *Lunes 14 de octubre a la 01:00 pm*. \n' +
+    ' \n' +
+    'Recuerda que la fecha de hoy es *24/10/2024*',
+  options: {
+    media: null,
+    buttons: [],
+    capture: true,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [ [Object], [Object] ],
+    keyword: {},
+    callback: true
+  },
+  refSerialize: 'dbeffb8d54f7294128efc41c62d4a128'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '573005977145@s.whatsapp.net',
+    fromMe: false,
+    id: '3EB05AA315BFE29464799C',
+    participant: undefined
+  },
+  messageTimestamp: 1729817847,
+  pushName: '😎',
+  broadcast: false,
+  message: Message {
+    conversation: 'sabados 26 de octubre a la 7am',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'sabados 26 de octubre a la 7am',
   from: '573005977145'
 }
