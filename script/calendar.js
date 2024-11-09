@@ -34,6 +34,13 @@ async function createEvent(
 
     const startDateTime = new Date(date);
 
+    if (startDateTime < new Date()) {
+      console.log(
+        "La fecha y hora proporcionada es pasada. No se creará el evento."
+      );
+      return null;
+    }
+
     const endDateTime = new Date(startDateTime);
 
     endDateTime.setHours(startDateTime.getHours() + duration);
